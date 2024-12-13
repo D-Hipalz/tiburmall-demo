@@ -7,7 +7,7 @@ const MemoNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed z-50 w-full bg-gray-100 border-b border-gray-100 backdrop-blur-sm">
+    <nav className="fixed z-50 w-full bg-gray-600 shadow-xl backdrop-blur-sm">
       <div className="pr-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Logo />
@@ -22,7 +22,7 @@ const MemoNavbar = () => {
             <button
               type="button"
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-secondary hover:text-primary-dark focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-md hover:text-primary-dark focus:outline-none"
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>

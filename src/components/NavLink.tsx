@@ -8,7 +8,7 @@ interface NavLinkProps {
 export const NavLink: React.FC<NavLinkProps> = ({ href, children }) => (
   <a
     href={href}
-    className="text-secondary hover:text-primary-dark px-3 py-2 text-sm font-medium tracking-wider transition-colors duration-200"
+    className="px-3 py-2 text-sm font-medium tracking-wider text-white transition-colors duration-200 hover:text-primary-dark"
   >
     {children}
   </a>
@@ -17,7 +17,7 @@ export const NavLink: React.FC<NavLinkProps> = ({ href, children }) => (
 export const MobileNavLink: React.FC<NavLinkProps> = ({ href, children }) => (
   <a
     href={href}
-    className="block text-secondary hover:text-primary-dark px-3 py-2 text-base font-medium tracking-wider transition-colors duration-200"
+    className="block px-3 py-2 text-base font-medium tracking-wider text-white transition-colors duration-200 hover:text-primary-dark"
   >
     {children}
   </a>
