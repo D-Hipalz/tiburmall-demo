@@ -1,5 +1,5 @@
 import { newArrivals, featuredProducts, categories } from './data/products';
-import { lazy, useState } from 'react';
+import { lazy, Suspense, useState } from 'react';
 const StoreLocations = lazy(() => import('./components/StoreLocations'));
 const Navbar = lazy(() => import('./components/Navbar'));
 const HeroSection = lazy(() => import('./components/HeroSection'));
@@ -13,6 +13,7 @@ function App() {
     window.open('https://www.hipalz.com/tibarumal', '_blank');
   }
   return (
+    <Suspense fallback="loading...">
     <div className="min-h-screen bg-gray-50">
       <Navbar />
       <HeroSection />
@@ -120,6 +121,7 @@ function App() {
         </div>
       </footer>
     </div>
+    </Suspense>
   );
 }
 
