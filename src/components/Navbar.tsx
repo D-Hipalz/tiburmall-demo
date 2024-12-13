@@ -8,7 +8,7 @@ const MemoNavbar = () => {
 
   return (
     <nav className="fixed z-50 w-full bg-gray-600 shadow-xl backdrop-blur-sm">
-      <div className="pr-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Logo />
           <div className="hidden md:block">
