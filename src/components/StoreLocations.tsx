@@ -6,7 +6,7 @@ const MemoStoreLocations: React.FC = () => {
   const [activeStore, setActiveStore] = useState(0);
   const handleStore = (index:number) =>{
     setActiveStore(index)
-    window.open('https://www.hipalz.com/tibarumal', '_blank');
+    window.open('https://www.hipalz.com/tibarumal/category', '_blank');
   }
 
   return (

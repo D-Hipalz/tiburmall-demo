@@ -10,7 +10,7 @@ const ProductPopup = lazy(() => import('./components/ProductPopup'));
 function App() {
   const [selectedProduct, setSelectedProduct] = useState<typeof newArrivals[0] | null>(null);
   const handleRoute =  ()=>{
-    window.open('https://www.hipalz.com/tibarumal', '_blank');
+    window.open('https://www.hipalz.com/tibarumal/category', '_blank');
   }
   return (
     <Suspense fallback="loading...">
